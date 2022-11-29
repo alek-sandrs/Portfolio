@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio by Aleksandr</title>
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			content: 'storix';
+		}
+	</style>
+</head>
+<body>
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Aleksandr</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#achievements">Achievements</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I'm Aleksandr and I'm a student from Latvia</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>I live in<br><span id="typed"></span></h1>
+				</div>
+				<p>
+					I'm studying to be a programmer, I really like web development, as well as databases (secretly, no)
+I like programming, dance and sports, my favourite is basketball. Now I'm looking for a job not necessarily a programmer. 1.5  years more and I can become a programmer or go on to study further.
+				</p>
+			</div>
+		</div>
+	</div>
+
+<!--Darba pieredze-->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li>2020-2021</li>
+				<li><a href="#">Olaines Ūdens un Siltums</a></li>
+				<li>Street worker</li>
+			</ul>
+			<ul class="work-list">
+				<li>2021-2022</li>
+				<li><a href="#">Cenuklubs</a></li>
+				<li>Shop assistant(seller)</li>
+			</ul>
+
+		</div>
+	</div>
+
+<!--Sasniegumiem-->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Awards &amp;<br>Achievements</h1>
+			<ul class="award-list list-flat">
+				<li>July 2020</li>
+				<li>Basketball street competition </li>
+				<li>3rd place </li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>2020 August</li>
+				<li>Finished 9th grade in high school</li>
+				<li>Enrolled in RVT</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Mans Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML(RVT, 50/50) / CSS(RVT, 50/50) / SASS(tutorials) / PHP(50/50) / Javascript (only Indian tutorials) </li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>MySQL(Indian tutorials and RVT) / Laragon(RVT) / Access(Two times was trying this)</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Citāts -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>Success is a ladder you can't climb with your hands in your pockets.</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="https://web.telegram.org/?legacy=1#/im?p=@Stor1x"><i class="fa fa-send"></i></a></li>
+						<li><a href="https://twitter.com/Klor1x"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Js -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+
+	<!--Teksts kurš mainas-->
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		strings: ["In your computer, right now", "your galaxy", "everywhere", "Latvia", "Rīga"],
+
+		typeSpeed:80,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
